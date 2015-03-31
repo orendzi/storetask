@@ -1,0 +1,128 @@
+/* Forms */
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+select,
+.dropdown
+    min-width: 300px
+    height: 30px !important
+    border: 0
+    background: #bbb
+    color: #444
+    padding: 2px 5px
+    box-sizing: border-box
+input[type="text"].error,
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+select.error,
+.dropdown.error
+    border: 2px solid #7f0000
+    background: #e5cccc
+    color: #7f0000
+    
+form
+    margin: 10px 0
+    label
+        margin-right: 10px
+    > div
+        margin-bottom: 7px
+        width: 500px
+        height: 35px
+        input, select, .dropdown
+            float: right
+        p.error
+            // float: left
+            font-size: 10pt
+    button
+        margin: 10px 0
+
+button,
+input[type="submit"]
+    border: 0
+    height: 30px
+    background: #c5c5c5
+    cursor: pointer
+    min-width: 80px
+
+input[type="submit"]
+    float: right
+    width: auto
+    min-width: 0
+
+button:hover,
+input:hover,
+input:focus,
+select:hover,
+select:focus
+    background: #fff
+    
+// Custom dropdown
+.dropdown
+    margin: 0
+    dd, 
+    dt
+        margin: 0
+        padding: 0
+        cursor: pointer
+    
+.dropdown dd
+    position: relative
+    ul
+        background: #f5f5f5
+        display: none
+        padding: 0
+        margin: 0
+        position: absolute
+        top: 7px
+        left: -5px
+        max-height: 200px
+        overflow: auto
+        width: 300px
+        box-sizing: border-box
+        li
+            padding: 15px 10px
+            width: 100%
+            float: left
+            box-sizing: border-box
+            input[type="radio"]
+                float: left
+            &:hover
+                background: #fff  
+            label
+                cursor: pointer
+                
+.error
+    color: #7f0000
+    margin: 0
+    padding: 0
+
+    
+
+// jquery effects
+.ui-effects-wrapper
+    height: 0 
+    margin-top: -21px !important
+
+// Tooltip
+.ui-tooltip  
+    background: rgba(0, 0, 0, .8) !important
+    border: 2px solid rgba(0, 0, 0, .1) !important
+    padding: 5px 10px !important
+    color: white !important
+    border-radius: 5px !important
+    font-family: "Helvetica Neue", Sans-Serif !important
+    font-size: 10pt !important
+    box-shadow: 0 0 7px black !important
+    
+// Datepicker
+#datepicker
+    background-image: url('../images/Calendar.png') 
+    background-position: center right
+    background-size: contain
+    background-repeat: no-repeat
+
+
+   

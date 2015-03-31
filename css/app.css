@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* Forms */
+/* line 3, ../sass/_forms.sass */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+select,
+.dropdown {
+  min-width: 300px;
+  height: 30px !important;
+  border: 0;
+  background: #bbb;
+  color: #444;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/_forms.sass */
+input[type="text"].error,
+input[type="email"].error,
+input[type="number"].error,
+input[type="search"].error,
+select.error,
+.dropdown.error {
+  border: 2px solid #7f0000;
+  background: #e5cccc;
+  color: #7f0000;
+}
+
+/* line 26, ../sass/_forms.sass */
+form {
+  margin: 10px 0;
+}
+/* line 28, ../sass/_forms.sass */
+form label {
+  margin-right: 10px;
+}
+/* line 30, ../sass/_forms.sass */
+form > div {
+  margin-bottom: 7px;
+  width: 500px;
+  height: 35px;
+}
+/* line 34, ../sass/_forms.sass */
+form > div input, form > div select, form > div .dropdown {
+  float: right;
+}
+/* line 36, ../sass/_forms.sass */
+form > div p.error {
+  font-size: 10pt;
+}
+/* line 39, ../sass/_forms.sass */
+form button {
+  margin: 10px 0;
+}
+
+/* line 42, ../sass/_forms.sass */
+button,
+input[type="submit"] {
+  border: 0;
+  height: 30px;
+  background: #c5c5c5;
+  cursor: pointer;
+  min-width: 80px;
+}
+
+/* line 50, ../sass/_forms.sass */
+input[type="submit"] {
+  float: right;
+  width: auto;
+  min-width: 0;
+}
+
+/* line 55, ../sass/_forms.sass */
+button:hover,
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+  background: #fff;
+}
+
+/* line 63, ../sass/_forms.sass */
+.dropdown {
+  margin: 0;
+}
+/* line 65, ../sass/_forms.sass */
+.dropdown dd,
+.dropdown dt {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 71, ../sass/_forms.sass */
+.dropdown dd {
+  position: relative;
+}
+/* line 73, ../sass/_forms.sass */
+.dropdown dd ul {
+  background: #f5f5f5;
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 7px;
+  left: -5px;
+  max-height: 200px;
+  overflow: auto;
+  width: 300px;
+  box-sizing: border-box;
+}
+/* line 85, ../sass/_forms.sass */
+.dropdown dd ul li {
+  padding: 15px 10px;
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 90, ../sass/_forms.sass */
+.dropdown dd ul li input[type="radio"] {
+  float: left;
+}
+/* line 92, ../sass/_forms.sass */
+.dropdown dd ul li:hover {
+  background: #fff;
+}
+/* line 94, ../sass/_forms.sass */
+.dropdown dd ul li label {
+  cursor: pointer;
+}
+
+/* line 97, ../sass/_forms.sass */
+.error {
+  color: #7f0000;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 105, ../sass/_forms.sass */
+.ui-effects-wrapper {
+  height: 0;
+  margin-top: -21px !important;
+}
+
+/* line 110, ../sass/_forms.sass */
+.ui-tooltip {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 5px 10px !important;
+  color: white !important;
+  border-radius: 5px !important;
+  font-family: "Helvetica Neue", Sans-Serif !important;
+  font-size: 10pt !important;
+  box-shadow: 0 0 7px black !important;
+}
+
+/* line 121, ../sass/_forms.sass */
+#datepicker {
+  background-image: url("../images/Calendar.png");
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../sass/_list.sass */
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+/* line 4, ../sass/_list.sass */
+table th {
+  text-align: left;
+}
+/* line 6, ../sass/_list.sass */
+table td, table th {
+  padding: 7px 15px;
+}
+/* line 8, ../sass/_list.sass */
+table td:not(:last-child), table th:not(:last-child) {
+  border-right: 3px solid #aeaeae;
+}
+/* line 10, ../sass/_list.sass */
+table td button, table th button {
+  margin-right: 5px;
+}
+/* line 12, ../sass/_list.sass */
+table tbody tr:hover {
+  background: #d8d8d8;
+}
+/* line 14, ../sass/_list.sass */
+table .sortable {
+  cursor: pointer;
+}
+/* line 16, ../sass/_list.sass */
+table .sortable.desc:after {
+  content: "▼";
+  color: #aaa;
+  float: right;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+/* line 22, ../sass/_list.sass */
+table .sortable.asc:after {
+  content: "▲";
+  color: #aaa;
+  float: right;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+/* line 28, ../sass/_list.sass */
+ul li {
+  list-style: none;
+}
+
+/* line 1, ../sass/_modal.sass */
+.modal-overlay {
+  background: rgba(9, 9, 9, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 10, ../sass/_modal.sass */
+.modal-content {
+  background: #eee;
+  padding: 20px;
+  width: 500px;
+  margin: 100px auto 0 auto;
+}
+/* line 15, ../sass/_modal.sass */
+.modal-content h3 {
+  margin-top: 0;
+  display: inline-block;
+}
+/* line 18, ../sass/_modal.sass */
+.modal-content .close {
+  float: right;
+  clear: both;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  background: transparent;
+  font-weight: 800;
+  font-size: 1.3rem;
+  outline: transparent;
+  position: relative;
+}
+/* line 29, ../sass/_modal.sass */
+.modal-content .close:hover {
+  color: #d00;
+}
+
+/* line 1, ../sass/_common.sass */
+.data-grid {
+  width: 900px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* line 5, ../sass/_common.sass */
+.data-grid td:nth-child(2) span {
+  float: right;
+}
+
+/* line 8, ../sass/_common.sass */
+.data-settings {
+  margin: 20px 0;
+}
+/* line 10, ../sass/_common.sass */
+.data-settings .filter {
+  float: left;
+}
+/* line 12, ../sass/_common.sass */
+.data-settings button[name="addItem"] {
+  float: right;
+}
+
+/* line 16, ../sass/_common.sass */
+.modal-content .cancel,
+.modal-content .approve {
+  margin-right: 10px;
+}
+/* line 19, ../sass/_common.sass */
+.modal-content .cancel:hover {
+  background: #078446;
+  color: #fff;
+}
+/* line 22, ../sass/_common.sass */
+.modal-content .approve:hover {
+  background: #f47835;
+  color: #fff;
+}
+/* line 25, ../sass/_common.sass */
+.modal-content p {
+  margin-top: 0;
+}
+
+/* line 13, ../sass/app.sass */
+body {
+  background: #dedede;
+  color: #444;
+  padding: 20px;
+  font-family: "Segoe UI", "Lucida Grande", "Ubuntu Regular";
+  box-sizing: border-box;
+}
+
+/* line 20, ../sass/app.sass */
+a {
+  text-decoration: none;
+  color: #999;
+}
+/* line 23, ../sass/app.sass */
+a:hover {
+  color: #555;
+}
+
+/* line 26, ../sass/app.sass */
+canvas {
+  background: #fff;
+  padding: 20px;
+  border: 2px dotted #dfdfdf;
+}
+
+/* line 31, ../sass/app.sass */
+.chosen {
+  border: 3px solid blue;
+}
+
+/* line 34, ../sass/app.sass */
+.hidden {
+  display: none;
+}
+
+/* line 37, ../sass/app.sass */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 42, ../sass/app.sass */
+.clearfix:after {
+  clear: both;
+}

@@ -1,0 +1,45 @@
+doctype html
+html
+    head
+        meta(charset="utf8")
+        title Data-grid
+        
+        link(href="css/app.css" rel="stylesheet" type="text/css")
+        link(rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css")
+    body
+        section(class="modal-view-container")
+            
+        section(class="data-grid")
+            div(class="data-settings clearfix")
+                div(class="filter")
+                div(class="controls")
+            table
+                thead
+                    tr
+                        th(class="sortable asc" data-order="asc" title="Click to sort") Date
+                        th(class="sortable asc" data-order="asc" title="Click to sort") Name
+                        th(class="sortable asc" data-order="asc" title="Click to sort") Price
+                        th Actions
+                tbody
+            
+                    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.js")
+    
+    script(src="js/utils/namespace.js")
+    script(src="js/utils/mediator.js")
+    script(src="js/utils/masking.js")
+    
+    script(src="js/models/formModal.js")
+    script(src="js/models/alertMsg.js")
+    script(src="js/models/item.js")
+    script(src="js/models/itemList.js")
+    
+    script(src="js/views/itemList.js")
+    script(src="js/views/formModal.js")
+    script(src="js/views/alertMsg.js")
+    script(src="js/views/modalWindow.js")
+    script(src="js/views/filter.js")
+    script(src="js/views/tableControl.js")
+    
+    script(src="js/app.js")
